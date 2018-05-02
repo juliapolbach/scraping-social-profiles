@@ -4,20 +4,33 @@ const resolvers = require('./resolvers');
 const typeDefs = `
 
 type Query {
-  author(firstName: String, lastName: String, _id: String): Author
-  allAuthors: [Author]
+    influencer(name: String, lastName: String): Influencer
+    allAuthors: [Influencer]
 }
 
-type Author {
-  _id: ID!
-  firstName: String
-  lastName: String
+type Influencer {
+    id: ID!
+    name: String
+    lastName: String
+    instagram: Instagram
+    twitter: Twitter
+    youtube: Youtube
 }
 
-input AuthorInput {
-  _id: ID!
-  firstName: String
-  lastName: String
+type Instagram {
+    profileUrl: String
+    photoProfile: String
+    followers: Int
+    totalPosts: Int
+}
+
+input InfluencerInput {
+    id: ID!
+    name: String
+    lastName: String
+    instagram: Instagram
+    twitter: Twitter
+    youtube: Youtube
 }
 
 type Mutation {

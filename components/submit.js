@@ -1,7 +1,6 @@
 import React from 'react';
 import {graphql} from 'react-apollo';
 import gql from 'graphql-tag';
-import {allPosts} from './postlist';
 
 const Submit = ({createPost}) => {
     function handleSubmit(event) {
@@ -25,38 +24,5 @@ const Submit = ({createPost}) => {
     );
 };
 
-const createPost = gql`
-    mutation createPost($title: String!, $text: String!, $author: String!) {
-        createPost(input: {title: $title, text: $text, author: $author}) {
-            id
-            title
-            text
-            author {
-                id
-                firstName
-                lastName
-            }
-        }
-    }
-`;
 
-export default graphql(createPost, {
-    props: ({mutate}) => ({
-        createPost: (title, text, author) =>
-            mutate({
-                variables: {title, text, author},
-                update: (proxy, {data: {createPost}}) => {
-                    const data = proxy.readQuery({
-                        query: allPosts,
-                    });
-                    proxy.writeQuery({
-                        query: allPosts,
-                        data: {
-                            ...data,
-                            allPosts: [createPost, ...data.allPosts],
-                        },
-                    });
-                },
-            }),
-    }),
-})(Submit);
+export default Submit;
