@@ -2,36 +2,26 @@ const {makeExecutableSchema} = require('graphql-tools');
 const resolvers = require('./resolvers');
 
 const typeDefs = `
+
 type Query {
-  author(firstName: String, lastName: String): Author
-  post(title: String): Post
+  author(firstName: String, lastName: String, _id: String): Author
   allAuthors: [Author]
-  allPosts: [Post]
 }
+
 type Author {
-  id: Int
+  _id: ID!
   firstName: String
   lastName: String
-  posts: [Post]
 }
+
 input AuthorInput {
+  _id: ID!
   firstName: String
   lastName: String
 }
-type Post {
-  id: Int
-  title: String
-  text: String
-  author: Author
-}
-input PostInput {
-  title: String
-  text: String
-  author: Int
-}
+
 type Mutation {
   createAuthor(input: AuthorInput!): Author
-  createPost(input: PostInput!): Post
 }
 `;
 

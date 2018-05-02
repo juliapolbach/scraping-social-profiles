@@ -13,21 +13,11 @@ mongoose.connection.on('error', (err) => {
 const db = mongoose.createConnection(process.env.DATABASE);
 
 const AuthorSchema = mongoose.Schema({
-    id: {type: Number, index: true},
+    _id: String,
     firstName: String,
-    lastName: String,
-    posts: [{type: mongoose.Schema.Types.ObjectId, ref: 'Post'}],
-});
-
-const PostSchema = mongoose.Schema({
-    id: {type: Number, index: true},
-    title: String,
-    text: String,
-    author: {type: mongoose.Schema.Types.ObjectId, ref: 'Author'},
+    lastName: String
 });
 
 const Author = db.model('Author', AuthorSchema);
-const Post = db.model('Post', PostSchema);
 
 exports.Author = Author;
-exports.Post = Post;
