@@ -12,12 +12,21 @@ mongoose.connection.on('error', (err) => {
 
 const db = mongoose.createConnection(process.env.DATABASE);
 
-const AuthorSchema = mongoose.Schema({
-    _id: String,
-    firstName: String,
-    lastName: String
+const InfluencerSchema = mongoose.Schema({
+    id: String,
+    name: String,
+    lastName: String,
+    instagram: Object
 });
 
-const Author = db.model('Author', AuthorSchema);
+const InstagramSchema = mongoose.Schema({
+    profileUrl: String,
+    photoProfile: String,
+    followers: Number,
+    totalPosts: Number
+});
 
-exports.Author = Author;
+const Influencer = db.model('Influencer', InfluencerSchema);
+const Instagram = db.model('Instagram', InstagramSchema);
+
+exports.Influencer = Influencer;

@@ -5,7 +5,7 @@ const typeDefs = `
 
 type Query {
     influencer(name: String, lastName: String): Influencer
-    allAuthors: [Influencer]
+    allInfluencers: [Influencer]
 }
 
 type Influencer {
@@ -17,6 +17,14 @@ type Influencer {
     youtube: Youtube
 }
 
+input InfluencerInput {
+    name: String
+    lastName: String
+    instagram: InstagramInput
+    twitter: TwitterInput
+    youtube: YoutubeInput
+}
+
 type Instagram {
     profileUrl: String
     photoProfile: String
@@ -24,17 +32,46 @@ type Instagram {
     totalPosts: Int
 }
 
-input InfluencerInput {
-    id: ID!
-    name: String
-    lastName: String
-    instagram: Instagram
-    twitter: Twitter
-    youtube: Youtube
+input InstagramInput {
+    profileUrl: String
+    photoProfile: String
+    followers: Int
+    totalPosts: Int
 }
 
+type Twitter {
+    profileUrl: String
+    photoProfile: String
+    followers: Int
+    totalPosts: Int
+}
+
+input TwitterInput {
+    profileUrl: String
+    photoProfile: String
+    followers: Int
+    totalPosts: Int
+}
+
+type Youtube {
+    profileUrl: String
+    photoProfile: String
+    followers: Int
+    totalPosts: Int
+}
+
+input YoutubeInput {
+    profileUrl: String
+    photoProfile: String
+    followers: Int
+    totalPosts: Int
+}
+
+
 type Mutation {
-  createAuthor(input: AuthorInput!): Author
+  createInfluencer(input: InfluencerInput!): Influencer
+  updateInfluencer(input: InfluencerInput!) : Influencer
+  removeInfluencer(input: InfluencerInput!) : Influencer
 }
 `;
 
