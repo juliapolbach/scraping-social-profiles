@@ -1,6 +1,7 @@
 require('dotenv').config({path: 'variables.env'});
 const { Influencer } = require('./mongodb');
-const { addScrappedInfo } = require('./instagramScrapper');
+const { addInstagramScrappedInfo } = require('./instagramScrapper');
+const { addTwitterInfo } = require('./twitterScrapper');
 
 const resolvers = {
         Query: {
@@ -28,8 +29,10 @@ const resolvers = {
                 const influencer = await exist(id);
 
                 if (!influencer) {
-                    //getInstagramInfo
-                    await addScrappedInfo(input);
+                    //getScrappedInfo
+                    await addInstagramScrappedInfo(input);
+                    await addTwitterInfo(input);
+
                     const influencer = await new Influencer({
                         id: id,
                         ...input,

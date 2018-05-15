@@ -16,7 +16,8 @@ const InfluencerSchema = mongoose.Schema({
     id: String,
     name: String,
     lastName: String,
-    instagram: Object
+    instagram: Object,
+    twitter: Object
 });
 
 const InstagramSchema = mongoose.Schema({

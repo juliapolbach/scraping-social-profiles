@@ -1,9 +1,9 @@
 const puppeteer = require('puppeteer');
 
-let scrapeInstagram = async () => {
+let scrapeInstagram = async (input) => {
     const browser = await puppeteer.launch({headless: false});
     const page = await browser.newPage();
-    await page.goto('https://www.instagram.com/juliapolbach/');
+    await page.goto(input.instagram.profileUrl);
     await page.waitFor(1000);
 
     const result = await page.evaluate(() => {
@@ -22,11 +22,8 @@ let scrapeInstagram = async () => {
     return result;
 };
 
-let addScrappedInfo = async (input) => {
-    return scrapeInstagram().then((instagramData) => {
-        //console.log(instagramData); // Success!
-
-        console.log('mutating input');
+let addInstagramScrappedInfo = async (input) => {
+    return scrapeInstagram(input).then((instagramData) => {
         input.instagram.photoProfile = instagramData.photoProfile;
         input.instagram.followers = instagramData.followers;
         input.instagram.totalPosts = instagramData.totalPosts;
@@ -35,4 +32,4 @@ let addScrappedInfo = async (input) => {
     });
 };
 
-exports.addScrappedInfo = addScrappedInfo;
+exports.addInstagramScrappedInfo = addInstagramScrappedInfo;
