@@ -18,6 +18,7 @@ type Influencer {
 }
 
 input InfluencerInput {
+    id: ID
     name: String
     lastName: String
     instagram: InstagramInput
@@ -67,11 +68,10 @@ input YoutubeInput {
     totalPosts: Int
 }
 
-
 type Mutation {
   createInfluencer(input: InfluencerInput!): Influencer
   updateInfluencer(input: InfluencerInput!) : Influencer
-  removeInfluencer(input: InfluencerInput!) : Influencer
+  removeInfluencer(id: ID!) : Influencer
 }
 `;
 

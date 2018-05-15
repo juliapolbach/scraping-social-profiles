@@ -26,7 +26,23 @@ const InstagramSchema = mongoose.Schema({
     totalPosts: Number
 });
 
+const TwitterSchema = mongoose.Schema({
+    profileUrl: String,
+    photoProfile: String,
+    followers: Number,
+    totalPosts: Number
+});
+
+const YoutubeSchema = mongoose.Schema({
+    profileUrl: String,
+    photoProfile: String,
+    followers: Number,
+    totalPosts: Number
+});
+
 const Influencer = db.model('Influencer', InfluencerSchema);
 const Instagram = db.model('Instagram', InstagramSchema);
+const Twitter = db.model('Twitter', TwitterSchema);
+const Youtube = db.model('Youtube', YoutubeSchema);
 
 exports.Influencer = Influencer;
