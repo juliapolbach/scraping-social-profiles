@@ -9,7 +9,7 @@ let scrapeTwitter = async (input) => {
     const browser = await puppeteer.launch({headless: false});
     const page = await browser.newPage();
     await page.goto(input.twitter.profileUrl);
-    await page.waitFor(1000);
+    //await page.waitFor(1000);
 
     const result = await page.evaluate(() => {
         let photoProfile = document.querySelector('.ProfileAvatar-image').getAttribute('src');

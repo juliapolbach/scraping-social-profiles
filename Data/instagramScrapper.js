@@ -4,7 +4,7 @@ let scrapeInstagram = async (input) => {
     const browser = await puppeteer.launch({headless: false});
     const page = await browser.newPage();
     await page.goto(input.instagram.profileUrl);
-    await page.waitFor(1000);
+    //await page.waitFor(1000);
 
     const result = await page.evaluate(() => {
         let photoProfile = document.querySelector('img').getAttribute('src');
@@ -25,8 +25,8 @@ let scrapeInstagram = async (input) => {
 let addInstagramScrappedInfo = async (input) => {
     return scrapeInstagram(input).then((instagramData) => {
         input.instagram.photoProfile = instagramData.photoProfile;
-        input.instagram.followers = instagramData.followers;
-        input.instagram.totalPosts = instagramData.totalPosts;
+        input.instagram.followers = parseInt(instagramData.followers);
+        input.instagram.totalPosts = parseInt(instagramData.totalPosts);
 
         return input;
     });
