@@ -1,6 +1,6 @@
 require('dotenv').config({path: 'variables.env'});
-const {Influencer} = require('./mongodb');
-const igScrap = require('ig-scrap');
+const { Influencer } = require('./mongodb');
+const { addScrappedInfo } = require('./instagramScrapper');
 
 const resolvers = {
         Query: {
@@ -27,21 +27,14 @@ const resolvers = {
                 };
                 const influencer = await exist(id);
 
-                //getInstagramInfo
-                const url = igScrap.urlParser.user('https://www.instagram.com/danielaazuaje_/');
-
-                const instagramInfo = (url) => {
-                    return igScrap.user(url, (err, result) => {});
-                };
-
-                const result = await instagramInfo(url);
-                console.log(err, result);
-
                 if (!influencer) {
-                    const influencer = new Influencer({
+                    //getInstagramInfo
+                    await addScrappedInfo(input);
+                    const influencer = await new Influencer({
                         id: id,
                         ...input,
                     });
+
                     await influencer.save();
                     return influencer.toObject();
                 } else {

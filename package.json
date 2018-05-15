@@ -30,6 +30,7 @@
     "isomorphic-unfetch": "^2.0.0",
     "mongoose": "^5.0.17",
     "next": "^4.2.0",
+    "puppeteer": "^1.4.0",
     "react": "^16.2.0",
     "react-apollo": "^2.0.4",
     "react-dom": "^16.2.0"
