@@ -4,26 +4,47 @@ import styled from 'styled-components';
 import {createInfluencer} from '../queries/createInfluencerQuery';
 import {allInfluencers} from '../queries/allInfluencersQuery';
 
+const Title = styled.h3`
+  color: ${props => props.theme.green};
+  font-weight: 700;
+`;
 const StyledInput = styled.input`
-  width: 100%;
-  background-color: ${props => props.theme.paleblue};
-  border: 2px solid ${props => props.validate ? props.theme.blue : props.theme.pale};
-  padding-left: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+  width: 400px;
+  background-color: ${props => props.theme.white};
+  border: 1px solid ${props => props.theme.green};
+  margin: 10px 50px 0 0;
+  padding: 10px 10px 10px 10px;
+  border-radius: 4px;
   height: 30px;
 `;
 
-const StyledLabel = styled.label`
+const StyledButton = styled.button`
+  width: 400px;
   font-size: 1.5rem;
   text-transform: uppercase;
+  border: 1px solid ${props => props.theme.green};
+  background-color: ${props => props.theme.white};
+  border-radius: 30px;
+  margin-top: 30px;
+  padding: 5px 30px 5px 30px;
+  display: block;
+  color: ${props => props.theme.green};
 `;
 
-const StyledButton = styled.button`
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  background-color: ${props => props.theme.paleblue};
+const StyledForm = styled.form`
+   width: 60%;
+   margin: 50px auto;
+   padding: 10px 10px 10px 10px;
 `;
+
+const Container = styled.div`
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+`;
+
 
 class AddAInfluencerForm extends React.Component {
     constructor(props, context) {
@@ -36,13 +57,15 @@ class AddAInfluencerForm extends React.Component {
 
     onClick() {
         this.props.mutate({
-            variables: {input: {
-                name: this.state.name,
-                lastName: this.state.lastName,
-                instagram: {profileUrl: this.state.instagram},
-                twitter: {profileUrl: this.state.twitter},
-                youtube: {profileUrl: this.state.youtube}
-            }},
+            variables: {
+                input: {
+                    name: this.state.name,
+                    lastName: this.state.lastName,
+                    instagram: {profileUrl: this.state.instagram},
+                    twitter: {profileUrl: this.state.twitter},
+                    youtube: {profileUrl: this.state.youtube}
+                }
+            },
             refetchQueries: [{query: allInfluencers}]
         })
             .then(() => {
@@ -59,56 +82,52 @@ class AddAInfluencerForm extends React.Component {
 
     render() {
         return (
-            <form>
-                <StyledLabel>Name</StyledLabel>
-                <StyledInput
-                    name="name"
-                    type="text"
-                    value={this.state.name}
-                    placeholder="Name"
-                    onChange={event => this.handleChange(event.target.value, event.target.name)}
-                />
-                <StyledLabel>Last Name</StyledLabel>
-                <StyledInput
-                    name="lastName"
-                    type="text"
-                    value={this.state.lastName}
-                    placeholder="Last Name"
-                    onChange={event => this.handleChange(event.target.value, event.target.name)}
-                />
-                <StyledLabel>Instagram</StyledLabel>
-                <StyledInput
-                    name="instagram"
-                    type="text"
-                    value={this.state.instagram}
-                    placeholder="https://"
-                    onChange={event => this.handleChange(event.target.value, event.target.name)}
-                />
-                <StyledLabel>Twitter</StyledLabel>
-                <StyledInput
-                    name="twitter"
-                    type="text"
-                    value={this.state.twitter}
-                    placeholder="https://"
-                    onChange={event => this.handleChange(event.target.value, event.target.name)}
-                />
-                <StyledLabel>Youtube</StyledLabel>
-                <StyledInput
-                    name="youtube"
-                    type="text"
-                    value={this.state.youtube}
-                    placeholder="https://"
-                    onChange={event => this.handleChange(event.target.value, event.target.name)}
-                />
-                <StyledButton type="button" onClick={this.onClick}>Send!</StyledButton>
-            </form>
+            <Container>
+                <Title>Añade un influencer</Title>
+                <StyledForm>
+                    <StyledInput
+                        name="name"
+                        type="text"
+                        value={this.state.name}
+                        placeholder="Name*"
+                        onChange={event => this.handleChange(event.target.value, event.target.name)}
+                    />
+                    <StyledInput
+                        name="lastName"
+                        type="text"
+                        value={this.state.lastName}
+                        placeholder="Last Name*"
+                        onChange={event => this.handleChange(event.target.value, event.target.name)}
+                    />
+                    <StyledInput
+                        name="instagram"
+                        type="text"
+                        value={this.state.instagram}
+                        placeholder="Instagram"
+                        onChange={event => this.handleChange(event.target.value, event.target.name)}
+                    />
+                    <StyledInput
+                        name="twitter"
+                        type="text"
+                        value={this.state.twitter}
+                        placeholder="Twitter"
+                        onChange={event => this.handleChange(event.target.value, event.target.name)}
+                    />
+                    <StyledInput
+                        name="youtube"
+                        type="text"
+                        value={this.state.youtube}
+                        placeholder="Youtube"
+                        onChange={event => this.handleChange(event.target.value, event.target.name)}
+                    />
+                    <StyledButton type="button" onClick={this.onClick}>Añadir</StyledButton>
+                </StyledForm>
+            </Container>
         );
     }
 }
 
-AddAInfluencerForm.propTypes = {
-
-};
+AddAInfluencerForm.propTypes = {};
 
 const AddAInfluencerFormWrapper = graphql(createInfluencer)(AddAInfluencerForm);
 export default AddAInfluencerFormWrapper;

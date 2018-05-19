@@ -3,6 +3,7 @@ const next = require('next');
 const bodyParser = require('body-parser');
 const express = require('express');
 const {graphqlExpress, graphiqlExpress} = require('apollo-server-express');
+const cors = require('cors');
 
 // our packages
 const schema = require('./data/schema');
@@ -18,14 +19,9 @@ app.prepare()
         const server = express();
 
         //graphQL
+        server.use(cors());
         server.use('/graphql', bodyParser.json(), graphqlExpress({schema}));
         server.use('/graphiql', graphiqlExpress({endpointURL: '/graphql'}));
-
-        server.get('/p/:id', (req, res) => {
-            const actualPage = '/post';
-            const queryParams = { title: req.params.id };
-            app.render(req, res, actualPage, queryParams)
-        });
 
         server.get('*', (req, res) => {
             return handle(req, res)

@@ -1,16 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Row, Col} from 'react-bootstrap';
 
 const InfluencerBox = styled.div`
-  width: 100%;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
+  width: 90%;
+  margin: 10px 1px 1px 10px;
+  padding: 10px 1px 1px 10px;
   background-color: ${props => props.theme.white};
-  font-weight: 400;
+  border: 1px solid ${props => props.theme.green};
+  border-radius: 4px;
 `;
 
 const Name = styled.h4`
-  color: ${props => props.theme.pale};
+  color: ${props => props.theme.green};
   float: left;
   font-weight: 700;
 `;
@@ -33,7 +35,12 @@ const Label = styled.div`
 
 const Actions = styled.div`
   float: right;
-  padding: 20px;
+  padding: 0 10px 10px 10px;
+`;
+
+const Icon = styled.span`
+  color: ${props => props.theme.green};
+  padding: 10px;
 `;
 
 class Influencer extends React.Component {
@@ -48,11 +55,15 @@ class Influencer extends React.Component {
     render() {
         return (
             <InfluencerBox>
+                <Row>
+                    <Col md={2}>
                 <Img src={this.getAvatar(this.props.influencer.instagram.photoProfile)} alt="Profile photo"/>
-                <Name>{this.props.influencer.name} {this.props.influencer.lastName}</Name>
+                    </Col>
+                    <Col md={10}>
+                    <Name>{this.props.influencer.name} {this.props.influencer.lastName}</Name>
                 <Actions>
-                    <span className="glyphicon glyphicon-trash" aria-hidden="true"> </span>
-                    <span className="glyphicon glyphicon-pencil" aria-hidden="true"> </span>
+                    <Icon>EDIT</Icon>
+                    <Icon className="glyphicon glyphicon-remove" aria-hidden="true"> </Icon>
                 </Actions>
                 <Field>
                     <a href={this.props.influencer.instagram ? this.props.influencer.instagram.profileUrl : undefined}>Instagram</a>
@@ -71,6 +82,8 @@ class Influencer extends React.Component {
                     <Label>Total
                         Posts: {this.props.influencer.youtube ? this.props.influencer.youtube.totalPosts : '--'}</Label>
                 </Field>
+                    </Col>
+                </Row>
             </InfluencerBox>
         );
     }

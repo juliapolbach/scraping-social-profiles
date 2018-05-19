@@ -5,8 +5,16 @@ import styled from 'styled-components';
 import {allInfluencers} from '../queries/allInfluencersQuery';
 import Influencer from './Influencer';
 
+const Title = styled.h3`
+  color: ${props => props.theme.green};
+  font-weight: 700;
+`;
+
 const ListGroup = styled.ul`
   list-style-type: none;
+  height: 80vh;
+  overflow:scroll;
+  margin: 0 auto;
 `;
 
 const ListGroupItem = styled.li`
@@ -23,11 +31,10 @@ class InfluencersList extends React.Component {
         } else if (this.props.data.error) {
             return <div className="col-md-6">Error</div>;
         } else {
-            console.log(this.props.data.allInfluencers);
             return (
                 <div>
+                    <Title>Influencers</Title>
                     <ListGroup>
-                        <li><h4>Influencers</h4></li>
                         {this.props.data.allInfluencers.map((influencer, index) => {
                             return <ListGroupItem key={index}>
                                 <Influencer influencer={influencer}/>

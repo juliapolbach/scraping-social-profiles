@@ -10,8 +10,9 @@ import withData from '../lib/withData';
 const StyledGrid = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: ${props => props.theme.background};
-  font-family: ${props => props.theme.font};
+  padding: 10px 30px 10px 30px;
+  background-color: ${props => props.theme.white};
+  font-family: Raleway, sans-serif;
 `;
 
 export default withData(() => (

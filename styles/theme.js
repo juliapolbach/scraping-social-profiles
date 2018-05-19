@@ -11,5 +11,7 @@ export const Theme = {
     backdrop: 'rgba(74, 95, 102, 0.6)',
     tableblue: '#c7e6eb',
     darkblue: '#446976',
-    font: 'Raleway'
+    font: 'Raleway',
+    green: '#19CF86',
+    paleGreen: '#A3EBCE'
 };
