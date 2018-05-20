@@ -30,11 +30,34 @@ let scrapeInstagram = async (input) => {
     }
 };
 
+//Parse twitter numerical info into Int
+let parseInstagramData = (value) => {
+    if (typeof value === 'number') {
+        return value;
+    } else {
+        if (value.replace('.', "").match(onlyNumbers)) {
+            return parseInt(value.replace('.', ""));
+        } else if (value.match(thousand)) {
+            if (value.match(withDecimals)) {
+                return parseInt(value.replace(',', "").replace('m', "").concat("00"));
+            } else {
+                return parseInt(value.replace('m', "").concat("000"));
+            }
+        } else if (value.match(milion)) {
+            if (value.match(withDecimals)) {
+                return parseInt(value.replace(',', "").replace('M', "").concat("00000").replace(/\s+/g, ''));
+            } else {
+                return parseInt(value.replace('M', "").concat("000000").replace(/\s+/g, ''));
+            }
+        }
+    }
+};
+
 let addInstagramScrappedInfo = async (input) => {
     return scrapeInstagram(input).then((instagramData) => {
         input.instagram.photoProfile = instagramData.photoProfile;
-        input.instagram.followers = instagramData.followers ? parseInt(instagramData.followers) : null;
-        input.instagram.totalPosts = instagramData.totalPosts ? parseInt(instagramData.totalPosts) : null;
+        input.instagram.followers = instagramData.followers ? parseInstagramData(instagramData.followers) : null;
+        input.instagram.totalPosts = instagramData.totalPosts ? parseInstagramData(instagramData.totalPosts) : null;
 
         return input;
     });
