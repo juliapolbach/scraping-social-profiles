@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node server.js",
+    "build": "next build",
     "start": "node server.js",
     "mongo:start": "docker run --name gql-mongo -p 27017:27017 -d mongo",
     "mongo:clean": "docker stop gql-mongo && docker rm gql-mongo"
