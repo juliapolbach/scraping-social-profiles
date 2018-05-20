@@ -11,7 +11,7 @@ let parseYoutubeData = (value) => {
 };
 
 let scrapeYoutube = async (input) => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
     const page = await browser.newPage();
     if (input.youtube.profileUrl) {
         await page.goto(input.youtube.profileUrl);

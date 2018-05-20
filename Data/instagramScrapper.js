@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 
 let scrapeInstagram = async (input) => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
     const page = await browser.newPage();
     if (input.instagram.profileUrl) {
         await page.goto(input.instagram.profileUrl);

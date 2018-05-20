@@ -6,7 +6,7 @@ const withDecimals = new RegExp('[,]');
 const milion = new RegExp('[M]');
 
 let scrapeTwitter = async (input) => {
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
         const page = await browser.newPage();
         if (input.twitter.profileUrl) {
             await page.goto(input.twitter.profileUrl);
