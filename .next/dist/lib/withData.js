@@ -56,9 +56,6 @@ var _initApollo2 = _interopRequireDefault(_initApollo);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = '/Users/juliapolbach/IdeaProjects/julia-codeTest/lib/withData.js';
-
-
 // Gets the display name of a JSX component for dev tools
 function getComponentDisplayName(Component) {
     return Component.displayName || Component.name || 'Unknown';
@@ -110,16 +107,7 @@ exports.default = function (ComposedComponent) {
                                     apollo = (0, _initApollo2.default)();
                                     _context.prev = 8;
                                     _context.next = 11;
-                                    return (0, _reactApollo.getDataFromTree)(_react2.default.createElement(_reactApollo.ApolloProvider, { client: apollo, __source: {
-                                            fileName: _jsxFileName,
-                                            lineNumber: 41
-                                        }
-                                    }, _react2.default.createElement(ComposedComponent, (0, _extends3.default)({}, composedInitialProps, {
-                                        __source: {
-                                            fileName: _jsxFileName,
-                                            lineNumber: 42
-                                        }
-                                    }))), {
+                                    return (0, _reactApollo.getDataFromTree)(_react2.default.createElement(_reactApollo.ApolloProvider, { client: apollo }, _react2.default.createElement(ComposedComponent, composedInitialProps)), {
                                         router: {
                                             asPath: ctx.asPath,
                                             pathname: ctx.pathname,
@@ -180,22 +168,10 @@ exports.default = function (ComposedComponent) {
         (0, _createClass3.default)(WithData, [{
             key: 'render',
             value: function render() {
-                return _react2.default.createElement(_reactApollo.ApolloProvider, { client: this.apollo, __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 82
-                    }
-                }, _react2.default.createElement(ComposedComponent, (0, _extends3.default)({}, this.props, {
-                    __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 83
-                    }
-                })));
+                return _react2.default.createElement(_reactApollo.ApolloProvider, { client: this.apollo }, _react2.default.createElement(ComposedComponent, this.props));
             }
         }]);
 
         return WithData;
-    }(_react2.default.Component), _class.displayName = 'WithData(' + getComponentDisplayName(ComposedComponent) + ')', _class.propTypes = {
-        serverState: _propTypes2.default.object.isRequired
-    }, _temp;
+    }(_react2.default.Component), _class.displayName = 'WithData(' + getComponentDisplayName(ComposedComponent) + ')', _temp;
 };
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxpYi93aXRoRGF0YS5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIlByb3BUeXBlcyIsIkFwb2xsb1Byb3ZpZGVyIiwiZ2V0RGF0YUZyb21UcmVlIiwiSGVhZCIsImluaXRBcG9sbG8iLCJnZXRDb21wb25lbnREaXNwbGF5TmFtZSIsIkNvbXBvbmVudCIsImRpc3BsYXlOYW1lIiwibmFtZSIsImN0eCIsInNlcnZlclN0YXRlIiwiYXBvbGxvIiwiZGF0YSIsImNvbXBvc2VkSW5pdGlhbFByb3BzIiwiQ29tcG9zZWRDb21wb25lbnQiLCJnZXRJbml0aWFsUHJvcHMiLCJwcm9jZXNzIiwiYnJvd3NlciIsInJvdXRlciIsImFzUGF0aCIsInBhdGhuYW1lIiwicXVlcnkiLCJyZXdpbmQiLCJjYWNoZSIsImV4dHJhY3QiLCJwcm9wcyIsInByb3BUeXBlcyIsIm9iamVjdCIsImlzUmVxdWlyZWQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTzs7OztBQUNQLEFBQU87Ozs7QUFDUCxBQUFRLEFBQWdCOztBQUN4QixBQUFPOzs7O0FBQ1AsQUFBTyxBQUFnQjs7Ozs7Ozs7O0FBRXZCO0FBQ0EsU0FBQSxBQUFTLHdCQUFULEFBQWlDLFdBQVcsQUFDeEM7V0FBTyxVQUFBLEFBQVUsZUFBZSxVQUF6QixBQUFtQyxRQUExQyxBQUFrRCxBQUNyRDtBQUVEOztrQkFBZSw2QkFBcUI7Z0JBQ2hDOzt3REFBQTswQ0FBQTs7O2lCQUFBOytCQUFBO3FIQUFBLEFBTWlDLEtBTmpDOzJEQUFBO2tGQUFBO2tDQUFBOzZEQUFBO3FDQU9RO0FBQ0k7QUFSWjs7a0RBQUEsQUFRMEIsQUFDTixBQUNFLEFBSWQ7QUFMWSxBQUNKO0FBRlUsQUFDZDs7QUFNQTs7QUFmWiwyREFBQSxBQWVtQzs7eUNBQ3ZCLGtCQWhCWixBQWdCOEIsaUJBaEI5Qjt3REFBQTtBQUFBO0FBQUE7O29EQUFBOzJDQWlCeUMsa0JBQUEsQUFBa0IsZ0JBakIzRCxBQWlCeUMsQUFBa0M7O3FDQUEvRDtBQWpCWixvRUFBQTs7cUNBQUE7d0NBc0JhLFFBdEJiLEFBc0JxQixTQXRCckI7d0RBQUE7QUFBQTtBQXVCa0I7O0FBdkJsQiw2Q0FBQSxBQXVCMkI7b0RBdkIzQjtvREFBQTs2RkE0Qm9CLEFBQUMsNkNBQWUsUUFBaEIsQUFBd0I7c0RBQXhCO3dEQUFBLEFBQ0k7QUFESjtxQ0FBQSxnQ0FDSSxBQUFDLDhDQUFELEFBQXVCOztzREFBdkI7d0RBRkYsQUFDRixBQUNJO0FBQUE7QUFBQTs7b0RBSVksSUFESixBQUNRLEFBQ1o7c0RBQVUsSUFGTixBQUVVLEFBQ2Q7bURBQU8sSUFuQ25DLEFBMkJzQixBQUlGLEFBQ1ksQUFHTztBQUhQLEFBQ0o7QUFGUixBQUNJLHFDQUxGOztxQ0EzQnRCO29EQUFBO0FBQUE7O3FDQUFBO29EQUFBO29FQUFBOztxQ0E0Q1k7QUFDQTtBQUNBO21EQUFBLEFBQUssQUFFTDs7QUFDQTs7O2tEQUVjLE9BQUEsQUFBTyxNQW5EakMsQUFpRFksQUFBYyxBQUNGLEFBQ0UsQUFBYTtBQURmLEFBQ0o7QUFGTSxBQUNWOztxQ0FsRGhCOztxREFBQTtBQXlEWSx1Q0F6RFosQUEwRGU7O3FDQTFEZjtxQ0FBQTtvREFBQTs7QUFBQTsyQ0FBQTtBQUFBOzs2Q0FBQTs0Q0FBQTtBQUFBOzt1QkFBQTtBQUFBLEFBOERJO0FBOURKOzswQkE4REksQUFBWSxPQUFPO2dEQUFBOztrSkFBQSxBQUNULEFBQ047O2tCQUFBLEFBQUssU0FBUywwQkFBVyxNQUFBLEFBQUssTUFBTCxBQUFXLFlBQVgsQUFBdUIsT0FGakMsQUFFZixBQUFjLEFBQXlDO21CQUMxRDtBQWpFTDs7O2lCQUFBO3FDQW1FYSxBQUNMO3VDQUNJLEFBQUMsNkNBQWUsUUFBUSxLQUF4QixBQUE2QjtrQ0FBN0I7b0NBQUEsQUFDSTtBQURKO2lCQUFBLGdDQUNJLEFBQUMsOENBQXNCLEtBQXZCLEFBQTRCOztrQ0FBNUI7b0NBRlIsQUFDSSxBQUNJLEFBR1g7QUFIVztBQUFBO0FBdEVoQjtBQUFBOztlQUFBO01BQThCLGdCQUE5QixBQUFvQyxtQkFBcEMsQUFDVyw0QkFBMEIsd0JBRHJDLEFBQ3FDLEFBQXdCLGlDQUQ3RCxBQUVXO3FCQUNVLG9CQUFBLEFBQVUsT0FIL0IsQUFFdUIsQUFDZTtBQURmLEFBQ2YsT0F3RVg7QUE1RUQiLCJmaWxlIjoid2l0aERhdGEuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2p1bGlhcG9sYmFjaC9JZGVhUHJvamVjdHMvanVsaWEtY29kZVRlc3QifQ==

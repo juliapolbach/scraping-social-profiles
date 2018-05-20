@@ -2,33 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f68fa9d0-f8ca-4408-92ee-66b618743345" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/BUILD_ID" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/build-stats.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/bundles/pages/_document.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/bundles/pages/_error.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/bundles/pages/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/commons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/components/AddAInfluencerForm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/components/Influencer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/components/InfluencersList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/components/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/lib/initApollo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/lib/withData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/pages/_document.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/pages/_error.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/pages/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/queries/allInfluencersQuery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/queries/createInfluencerQuery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/queries/removeInfluencerQuery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/queries/updateInfluencerQuery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/styles/beautifier.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/styles/styledComponents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/styles/theme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/manifest.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/_document.js" afterPath="$PROJECT_DIR$/.next/bundles/pages/_document.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/_error.js" afterPath="$PROJECT_DIR$/.next/bundles/pages/_error.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/index.js" afterPath="$PROJECT_DIR$/.next/bundles/pages/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/commons.js" afterPath="$PROJECT_DIR$/.next/commons.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/components/AddAInfluencerForm.js" afterPath="$PROJECT_DIR$/.next/dist/components/AddAInfluencerForm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/components/Influencer.js" afterPath="$PROJECT_DIR$/.next/dist/components/Influencer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/components/InfluencersList.js" afterPath="$PROJECT_DIR$/.next/dist/components/InfluencersList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/components/app.js" afterPath="$PROJECT_DIR$/.next/dist/components/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/lib/initApollo.js" afterPath="$PROJECT_DIR$/.next/dist/lib/initApollo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/lib/withData.js" afterPath="$PROJECT_DIR$/.next/dist/lib/withData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/pages/_document.js" afterPath="$PROJECT_DIR$/.next/dist/pages/_document.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/pages/_error.js" afterPath="$PROJECT_DIR$/.next/dist/pages/_error.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/pages/index.js" afterPath="$PROJECT_DIR$/.next/dist/pages/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/queries/allInfluencersQuery.js" afterPath="$PROJECT_DIR$/.next/dist/queries/allInfluencersQuery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/queries/createInfluencerQuery.js" afterPath="$PROJECT_DIR$/.next/dist/queries/createInfluencerQuery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/queries/removeInfluencerQuery.js" afterPath="$PROJECT_DIR$/.next/dist/queries/removeInfluencerQuery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/queries/updateInfluencerQuery.js" afterPath="$PROJECT_DIR$/.next/dist/queries/updateInfluencerQuery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/styles/beautifier.js" afterPath="$PROJECT_DIR$/.next/dist/styles/beautifier.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/styles/styledComponents.js" afterPath="$PROJECT_DIR$/.next/dist/styles/styledComponents.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/styles/theme.js" afterPath="$PROJECT_DIR$/.next/dist/styles/theme.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/main.js" afterPath="$PROJECT_DIR$/.next/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/manifest.js" afterPath="$PROJECT_DIR$/.next/manifest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/instagramScrapper.js" afterPath="$PROJECT_DIR$/Data/instagramScrapper.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,8 +91,8 @@
       <file leaf-file-name="instagramScrapper.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Data/instagramScrapper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            <state relative-caret-position="462">
+              <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -376,12 +372,12 @@
       <workItem from="1526374566188" duration="34085000" />
       <workItem from="1526749066273" duration="3004000" />
       <workItem from="1526753464202" duration="25305000" />
-      <workItem from="1526843793041" duration="2925000" />
+      <workItem from="1526843793041" duration="3174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107416000" />
+    <option name="totallyTimeSpent" value="107665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="993" extended-state="0" />
@@ -701,8 +697,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Data/instagramScrapper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        <state relative-caret-position="462">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding />
         </state>
       </provider>
