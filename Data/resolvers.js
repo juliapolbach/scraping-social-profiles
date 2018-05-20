@@ -62,6 +62,10 @@ const resolvers = {
             },
 
             async updateInfluencer(_, {input}) {
+                await addInstagramScrappedInfo(input);
+                await addTwitterInfo(input);
+                await addYoutubeScrappedInfo(input);
+
                 const update = (input) => {
                     return Influencer.findOneAndUpdate({id: input.id},
                         {$set: {...input}}, {new: true}).exec();

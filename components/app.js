@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import {ThemeProvider} from 'styled-components';
 import {Theme} from '../styles/theme';
+import Notifications, {notify} from 'react-notify-toast';
 
 export default ({children}) => (
     <div>
@@ -12,6 +13,7 @@ export default ({children}) => (
                   crossOrigin="anonymous"/>
             <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
         </Head>
+        <Notifications />
         <ThemeProvider theme={() => Theme}>
             {children}
         </ThemeProvider>

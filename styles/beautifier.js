@@ -8,3 +8,11 @@ export function beautifyNumber(number) {
         return null;
     }
 }
+
+export function beautifyURL(url) {
+    if (url.substr(url.length - 1) === '/') {
+        return url.substring(0, url.length - 1);
+    } else {
+        return url
+    }
+}

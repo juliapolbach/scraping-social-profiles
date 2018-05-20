@@ -1,32 +1,40 @@
 const puppeteer = require('puppeteer');
 
 let scrapeInstagram = async (input) => {
-    const browser = await puppeteer.launch({headless: false});
+    const browser = await puppeteer.launch({headless: true});
     const page = await browser.newPage();
-    await page.goto(input.instagram.profileUrl);
-    //await page.waitFor(1000);
+    if (input.instagram.profileUrl) {
+        await page.goto(input.instagram.profileUrl);
+        //await page.waitFor(1000);
 
-    const result = await page.evaluate(() => {
-        let photoProfile = document.querySelector('img').getAttribute('src');
-        let totalPosts = document.querySelectorAll('._fd86t')[0].innerText;
-        let followers = document.querySelectorAll('._fd86t')[1].innerText;
+        const result = await page.evaluate(() => {
+            let photoProfile = document.querySelector('img').getAttribute('src');
+            let totalPosts = document.querySelectorAll('._fd86t')[0].innerText;
+            let followers = document.querySelectorAll('._fd86t')[1].innerText;
 
+            return {
+                photoProfile,
+                totalPosts,
+                followers
+            }
+        });
+
+        browser.close();
+        return result;
+    } else {
         return {
-            photoProfile,
-            totalPosts,
-            followers
-        }
-    });
-
-    browser.close();
-    return result;
+            photoProfile: '',
+            totalPosts: null,
+            followers: null
+        };
+    }
 };
 
 let addInstagramScrappedInfo = async (input) => {
     return scrapeInstagram(input).then((instagramData) => {
         input.instagram.photoProfile = instagramData.photoProfile;
-        input.instagram.followers = parseInt(instagramData.followers);
-        input.instagram.totalPosts = parseInt(instagramData.totalPosts);
+        input.instagram.followers = instagramData.followers ? parseInt(instagramData.followers) : null;
+        input.instagram.totalPosts = instagramData.totalPosts ? parseInt(instagramData.totalPosts) : null;
 
         return input;
     });

@@ -44,7 +44,7 @@ class InfluencersList extends React.Component {
                             return <li key={index}>
                                 <Influencer influencer={influencer}/>
                             </li>
-                        })
+                        }).reverse()
                         }
                     </ListGroup>
                 </Container>

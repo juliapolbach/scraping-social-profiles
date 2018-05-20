@@ -1,83 +1,45 @@
 import React from 'react';
 import {graphql} from 'react-apollo';
-import styled from 'styled-components';
 import {createInfluencer} from '../queries/createInfluencerQuery';
 import {allInfluencers} from '../queries/allInfluencersQuery';
-
-const Title = styled.h3`
-  margin: 50px 0 0 50px;
-  color: ${props => props.theme.green};
-  font-weight: 700;
-`;
-const StyledInput = styled.input`
-  width: 400px;
-  background-color: ${props => props.theme.white};
-  border: 1px solid ${props => props.theme.green};
-  margin: 10px 50px 0 0;
-  padding: 10px 10px 10px 10px;
-  border-radius: 4px;
-  height: 30px;
-`;
-
-const StyledButton = styled.button`
-  width: 400px;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  border: 1px solid ${props => props.theme.green};
-  background-color: ${props => props.theme.white};
-  border-radius: 30px;
-  margin-top: 30px;
-  padding: 5px 30px 5px 30px;
-  display: block;
-  color: ${props => props.theme.green};
-  &:hover {
-  background-color: ${props => props.theme.paleGreen};
-  color: ${props => props.theme.white};
-  }
-`;
-
-const StyledForm = styled.form`
-   width: 60%;
-   margin: 50px auto;
-   padding: 10px 10px 10px 10px;
-`;
-
-const Container = styled.div`
-    width: auto;
-    height: auto;
-    margin: 0 auto;
-    padding: 10px;
-    position: relative;
-`;
-
+import {beautifyURL} from "../styles/beautifier";
+import {StyledForm, StyledInput, Container, Title, StyledButton} from "../styles/styledComponents";
+import { notify } from 'react-notify-toast';
 
 class AddAInfluencerForm extends React.Component {
     constructor(props, context) {
         super(props, context);
-
         this.handleChange = this.handleChange.bind(this);
         this.onClick = this.onClick.bind(this);
         this.state = {name: '', lastName: '', instagram: '', twitter: '', youtube: ''};
     }
 
     onClick() {
-        this.props.mutate({
-            variables: {
-                input: {
-                    name: this.state.name,
-                    lastName: this.state.lastName,
-                    instagram: {profileUrl: this.state.instagram},
-                    twitter: {profileUrl: this.state.twitter},
-                    youtube: {profileUrl: this.state.youtube}
-                }
-            },
-            refetchQueries: [{query: allInfluencers}]
-        })
-            .then(() => {
-                console.log('hurray!');
-            }).catch((error) => {
-            console.log('error :(', error);
-        });
+        if (this.state.name !== '') {
+            let myColor = { background: '#8eb7ce', text: "#000000" };
+            notify.show('Scrapping, please wait... 💅', "custom", 5000, myColor);
+            this.props.mutate({
+                variables: {
+                    input: {
+                        name: this.state.name,
+                        lastName: this.state.lastName,
+                        instagram: {profileUrl: beautifyURL(this.state.instagram)},
+                        twitter: {profileUrl: beautifyURL(this.state.twitter)},
+                        youtube: {profileUrl: beautifyURL(this.state.youtube)}
+                    }
+                },
+                refetchQueries: [{query: allInfluencers}]
+            })
+                .then(() => {
+                    console.log('hurray!');
+                    this.setState({name: '', lastName: '', instagram: '', twitter: '', youtube: ''})
+                }).catch((error) => {
+                notify.hide();
+                notify.show('There was an error 😱‍' + error.message, "error");
+            });
+        } else {
+            notify.show('Please, specify at least an influencer\'s name 🙅‍', "warning");
+        }
     }
 
     handleChange(value, id) {
@@ -101,7 +63,7 @@ class AddAInfluencerForm extends React.Component {
                         name="lastName"
                         type="text"
                         value={this.state.lastName}
-                        placeholder="Last Name*"
+                        placeholder="Last Name"
                         onChange={event => this.handleChange(event.target.value, event.target.name)}
                     />
                     <StyledInput
