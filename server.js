@@ -18,8 +18,7 @@ const handle = app.getRequestHandler();
 app.prepare()
     .then(() => {
         const server = express();
-
-        server.use(favicon(__dirname + '/public/images/favicon.ico'));
+        server.use(favicon('/public/images/favicon.ico'));
         server.use(cors());
 
         //graphQL
