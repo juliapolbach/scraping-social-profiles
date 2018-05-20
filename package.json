@@ -11,6 +11,9 @@
     "mongo:start": "docker run --name gql-mongo -p 27017:27017 -d mongo",
     "mongo:clean": "docker stop gql-mongo && docker rm gql-mongo"
   },
+  "engines": {
+    "node": "8.9.4"
+  },
   "keywords": [],
   "author": "Júlia Polbach",
   "license": "MIT",
