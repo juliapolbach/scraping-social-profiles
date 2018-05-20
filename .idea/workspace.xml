@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f68fa9d0-f8ca-4408-92ee-66b618743345" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/queries/removeInfluencerQuery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/beautifier.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/AddAInfluencerForm.js" afterPath="$PROJECT_DIR$/components/AddAInfluencerForm.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/Influencer.js" afterPath="$PROJECT_DIR$/components/Influencer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/InfluencersList.js" afterPath="$PROJECT_DIR$/components/InfluencersList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/app.js" afterPath="$PROJECT_DIR$/components/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index.js" afterPath="$PROJECT_DIR$/pages/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/theme.js" afterPath="$PROJECT_DIR$/styles/theme.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +26,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="484">
+              <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1526759587000" expanded="true" signature="349:502" ph="{...}" />
+                <marker date="1526813951027" expanded="true" signature="349:544" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -41,22 +39,23 @@
       <file leaf-file-name="AddAInfluencerForm.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/AddAInfluencerForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-284">
-              <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state relative-caret-position="88">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
-                <marker date="1526759269392" expanded="true" signature="320:356" ph="{...}" />
-                <marker date="1526759269392" expanded="true" signature="357:571" ph="{...}" />
-                <marker date="1526759269392" expanded="true" signature="610:910" ph="{...}" />
-                <marker date="1526759269392" expanded="true" signature="626:910" ph="{...}" />
-                <marker date="1526759269392" expanded="true" signature="945:1016" ph="{...}" />
-                <marker date="1526759269392" expanded="true" signature="1049:1148" ph="{...}" />
-                <marker date="1526759269392" expanded="true" signature="2273:4149" ph="..." />
-                <marker date="1526759269392" expanded="true" signature="2353:4124" ph="..." />
-                <marker date="1526759269392" expanded="true" signature="2387:2590" ph="..." />
-                <marker date="1526759269392" expanded="true" signature="2708:2924" ph="..." />
-                <marker date="1526759269392" expanded="true" signature="3042:3259" ph="..." />
-                <marker date="1526759269392" expanded="true" signature="3377:3588" ph="..." />
-                <marker date="1526759269392" expanded="true" signature="3706:3917" ph="..." />
+                <marker date="1526815865989" expanded="true" signature="345:381" ph="{...}" />
+                <marker date="1526815865989" expanded="true" signature="382:596" ph="{...}" />
+                <marker date="1526815865989" expanded="true" signature="635:1046" ph="{...}" />
+                <marker date="1526815865989" expanded="true" signature="651:1046" ph="{...}" />
+                <marker date="1526815865989" expanded="true" signature="945:1045" ph="{...}" />
+                <marker date="1526815865989" expanded="true" signature="1081:1152" ph="{...}" />
+                <marker date="1526815865989" expanded="true" signature="1185:1284" ph="{...}" />
+                <marker date="1526815865989" expanded="true" signature="2409:4283" ph="..." />
+                <marker date="1526815865989" expanded="true" signature="2491:4258" ph="..." />
+                <marker date="1526815865989" expanded="true" signature="2524:2727" ph="..." />
+                <marker date="1526815865989" expanded="true" signature="2845:3061" ph="..." />
+                <marker date="1526815865989" expanded="true" signature="3179:3396" ph="..." />
+                <marker date="1526815865989" expanded="true" signature="3514:3725" ph="..." />
+                <marker date="1526815865989" expanded="true" signature="3843:4054" ph="..." />
               </folding>
             </state>
           </provider>
@@ -65,49 +64,75 @@
       <file leaf-file-name="Influencer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/Influencer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1330">
-              <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+            <state relative-caret-position="541">
+              <caret line="80" column="2" lean-forward="false" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1526759813771" expanded="true" signature="143:341" ph="{...}" />
-                <marker date="1526759813771" expanded="true" signature="368:444" ph="{...}" />
-                <marker date="1526759813771" expanded="true" signature="471:557" ph="{...}" />
-                <marker date="1526759813771" expanded="true" signature="486:557" ph="{...}" />
-                <marker date="1526759813771" expanded="true" signature="585:602" ph="{...}" />
-                <marker date="1526759813771" expanded="true" signature="631:647" ph="{...}" />
-                <marker date="1526759813771" expanded="true" signature="678:724" ph="{...}" />
-                <marker date="1526759813771" expanded="true" signature="753:811" ph="{...}" />
-                <marker date="1526759813771" expanded="true" signature="1123:2986" ph="..." />
-                <marker date="1526759813771" expanded="true" signature="1470:1628" ph="..." />
-                <marker date="1526759813771" expanded="true" signature="1652:1993" ph="..." />
-                <marker date="1526759813771" expanded="true" signature="2017:2450" ph="..." />
-                <marker date="1526759813771" expanded="true" signature="2299:2425" ph="..." />
-                <marker date="1526759813771" expanded="true" signature="2474:2907" ph="..." />
-                <marker date="1526759813771" expanded="true" signature="2756:2882" ph="..." />
+                <marker date="1526817649335" expanded="true" signature="364:563" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="590:666" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="693:779" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="708:779" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="807:824" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="853:972" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="1002:1123" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="1160:1592" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="1188:1592" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="1458:1558" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="1568:1591" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="1623:1668" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="1699:1829" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="1741:1829" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="1808:1828" ph="{...}" />
+                <marker date="1526817649335" expanded="true" signature="2624:6466" ph="..." />
+                <marker date="1526817649335" expanded="true" signature="3084:3354" ph="..." />
+                <marker date="1526817649335" expanded="true" signature="3467:4363" ph="..." />
+                <marker date="1526817649335" expanded="true" signature="4476:5362" ph="..." />
+                <marker date="1526817649335" expanded="true" signature="5475:6361" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InfluencersList.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InfluencersList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/InfluencersList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="858">
+              <caret line="44" column="38" lean-forward="false" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
               <folding>
-                <marker date="1526759898488" expanded="true" signature="268:329" ph="{...}" />
-                <marker date="1526759898488" expanded="true" signature="361:440" ph="{...}" />
-                <marker date="1526759898488" expanded="true" signature="476:477" ph="{...}" />
+                <marker date="1526816236286" expanded="true" signature="273:328" ph="{...}" />
+                <marker date="1526816236286" expanded="true" signature="355:444" ph="{...}" />
+                <marker date="1526816236286" expanded="true" signature="383:444" ph="{...}" />
+                <marker date="1526816236286" expanded="true" signature="476:636" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="removeInfluencerQuery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/queries/removeInfluencerQuery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createInfluencerQuery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/queries/createInfluencerQuery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+            <state relative-caret-position="264">
+              <caret line="12" column="92" lean-forward="false" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -118,8 +143,8 @@
       <file leaf-file-name="theme.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/theme.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+            <state relative-caret-position="132">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,6 +156,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -173,12 +199,15 @@
         <option value="$PROJECT_DIR$/Data/instagramScrapper.js" />
         <option value="$PROJECT_DIR$/queries/allInfluencersQuery.js" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/components/app.js" />
-        <option value="$PROJECT_DIR$/styles/theme.js" />
         <option value="$PROJECT_DIR$/pages/index.js" />
+        <option value="$PROJECT_DIR$/styles/theme.js" />
+        <option value="$PROJECT_DIR$/styles/beautifier.js" />
         <option value="$PROJECT_DIR$/components/AddAInfluencerForm.js" />
-        <option value="$PROJECT_DIR$/components/Influencer.js" />
         <option value="$PROJECT_DIR$/components/InfluencersList.js" />
+        <option value="$PROJECT_DIR$/queries/deleteInfluencerQuery.js" />
+        <option value="$PROJECT_DIR$/styles/reset.css" />
+        <option value="$PROJECT_DIR$/components/Influencer.js" />
+        <option value="$PROJECT_DIR$/components/app.js" />
       </list>
     </option>
   </component>
@@ -199,7 +228,7 @@
     <option name="x" value="1440" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="height" value="993" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -230,6 +259,11 @@
             <path>
               <item name="julia-codeTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="julia-codeTest" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="julia-codeTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="julia-codeTest" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -246,6 +280,7 @@
     <property name="com.intellij.lang.jsgraphql.ide.injection.JSGraphQLLanguageInjectionUtil.gql" value="apollo" />
     <property name="SearchEverywhereHistoryKey" value="theme&#9;FILE&#9;file:///Users/juliapolbach/IdeaProjects/julia-codeTest/styles/theme.js&#10;app.&#9;FILE&#9;file:///Users/juliapolbach/IdeaProjects/julia-codeTest/components/app.js&#10;main.js&#9;FILE&#9;file:///Users/juliapolbach/IdeaProjects/julia-codeTest/.next/main.js&#10;index&#9;FILE&#9;file:///Users/juliapolbach/IdeaProjects/julia-codeTest/pages/index.js" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/react-bootstrap/es/FormGroup.js" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -366,16 +401,15 @@
       <workItem from="1525610260443" duration="12010000" />
       <workItem from="1526374566188" duration="34085000" />
       <workItem from="1526749066273" duration="3004000" />
-      <workItem from="1526753464202" duration="5988000" />
+      <workItem from="1526753464202" duration="12736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76343000" />
+    <option name="totallyTimeSpent" value="83091000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="1920" height="1057" extended-state="0" />
-    <editor active="true" />
+    <frame x="1440" y="23" width="1920" height="993" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -387,10 +421,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1923077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3452116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1682641" sideWeight="0.48997772" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17305644" sideWeight="0.48997772" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -413,41 +447,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Data/schema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/InfluencersList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding>
-            <marker date="1526759898488" expanded="true" signature="268:329" ph="{...}" />
-            <marker date="1526759898488" expanded="true" signature="361:440" ph="{...}" />
-            <marker date="1526759898488" expanded="true" signature="476:477" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1526759587000" expanded="true" signature="349:502" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -562,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/queries/allInfluencersQuery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/instagramScrapper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
@@ -581,13 +579,6 @@
         <state relative-caret-position="352">
           <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queries/createInfluencerQuery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -716,88 +707,135 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/theme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        <state relative-caret-position="132">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/app.js">
+    <entry file="file://$PROJECT_DIR$/styles/beautifier.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        <state relative-caret-position="110">
+          <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queries/createInfluencerQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queries/removeInfluencerQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/AddAInfluencerForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1526815865989" expanded="true" signature="345:381" ph="{...}" />
+            <marker date="1526815865989" expanded="true" signature="382:596" ph="{...}" />
+            <marker date="1526815865989" expanded="true" signature="635:1046" ph="{...}" />
+            <marker date="1526815865989" expanded="true" signature="651:1046" ph="{...}" />
+            <marker date="1526815865989" expanded="true" signature="945:1045" ph="{...}" />
+            <marker date="1526815865989" expanded="true" signature="1081:1152" ph="{...}" />
+            <marker date="1526815865989" expanded="true" signature="1185:1284" ph="{...}" />
+            <marker date="1526815865989" expanded="true" signature="2409:4283" ph="..." />
+            <marker date="1526815865989" expanded="true" signature="2491:4258" ph="..." />
+            <marker date="1526815865989" expanded="true" signature="2524:2727" ph="..." />
+            <marker date="1526815865989" expanded="true" signature="2845:3061" ph="..." />
+            <marker date="1526815865989" expanded="true" signature="3179:3396" ph="..." />
+            <marker date="1526815865989" expanded="true" signature="3514:3725" ph="..." />
+            <marker date="1526815865989" expanded="true" signature="3843:4054" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="484">
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1526759587000" expanded="true" signature="349:502" ph="{...}" />
+            <marker date="1526813951027" expanded="true" signature="349:544" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/AddAInfluencerForm.js">
+    <entry file="file://$PROJECT_DIR$/styles/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-284">
-          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding>
-            <marker date="1526759269392" expanded="true" signature="320:356" ph="{...}" />
-            <marker date="1526759269392" expanded="true" signature="357:571" ph="{...}" />
-            <marker date="1526759269392" expanded="true" signature="610:910" ph="{...}" />
-            <marker date="1526759269392" expanded="true" signature="626:910" ph="{...}" />
-            <marker date="1526759269392" expanded="true" signature="945:1016" ph="{...}" />
-            <marker date="1526759269392" expanded="true" signature="1049:1148" ph="{...}" />
-            <marker date="1526759269392" expanded="true" signature="2273:4149" ph="..." />
-            <marker date="1526759269392" expanded="true" signature="2353:4124" ph="..." />
-            <marker date="1526759269392" expanded="true" signature="2387:2590" ph="..." />
-            <marker date="1526759269392" expanded="true" signature="2708:2924" ph="..." />
-            <marker date="1526759269392" expanded="true" signature="3042:3259" ph="..." />
-            <marker date="1526759269392" expanded="true" signature="3377:3588" ph="..." />
-            <marker date="1526759269392" expanded="true" signature="3706:3917" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Influencer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1526759813771" expanded="true" signature="143:341" ph="{...}" />
-            <marker date="1526759813771" expanded="true" signature="368:444" ph="{...}" />
-            <marker date="1526759813771" expanded="true" signature="471:557" ph="{...}" />
-            <marker date="1526759813771" expanded="true" signature="486:557" ph="{...}" />
-            <marker date="1526759813771" expanded="true" signature="585:602" ph="{...}" />
-            <marker date="1526759813771" expanded="true" signature="631:647" ph="{...}" />
-            <marker date="1526759813771" expanded="true" signature="678:724" ph="{...}" />
-            <marker date="1526759813771" expanded="true" signature="753:811" ph="{...}" />
-            <marker date="1526759813771" expanded="true" signature="1123:2986" ph="..." />
-            <marker date="1526759813771" expanded="true" signature="1470:1628" ph="..." />
-            <marker date="1526759813771" expanded="true" signature="1652:1993" ph="..." />
-            <marker date="1526759813771" expanded="true" signature="2017:2450" ph="..." />
-            <marker date="1526759813771" expanded="true" signature="2299:2425" ph="..." />
-            <marker date="1526759813771" expanded="true" signature="2474:2907" ph="..." />
-            <marker date="1526759813771" expanded="true" signature="2756:2882" ph="..." />
-          </folding>
+        <state relative-caret-position="609">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/InfluencersList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="858">
+          <caret line="44" column="38" lean-forward="false" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
           <folding>
-            <marker date="1526759898488" expanded="true" signature="268:329" ph="{...}" />
-            <marker date="1526759898488" expanded="true" signature="361:440" ph="{...}" />
-            <marker date="1526759898488" expanded="true" signature="476:477" ph="{...}" />
+            <marker date="1526816236286" expanded="true" signature="273:328" ph="{...}" />
+            <marker date="1526816236286" expanded="true" signature="355:444" ph="{...}" />
+            <marker date="1526816236286" expanded="true" signature="383:444" ph="{...}" />
+            <marker date="1526816236286" expanded="true" signature="476:636" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queries/allInfluencersQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Influencer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="80" column="2" lean-forward="false" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1526817649335" expanded="true" signature="364:563" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="590:666" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="693:779" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="708:779" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="807:824" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="853:972" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="1002:1123" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="1160:1592" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="1188:1592" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="1458:1558" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="1568:1591" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="1623:1668" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="1699:1829" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="1741:1829" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="1808:1828" ph="{...}" />
+            <marker date="1526817649335" expanded="true" signature="2624:6466" ph="..." />
+            <marker date="1526817649335" expanded="true" signature="3084:3354" ph="..." />
+            <marker date="1526817649335" expanded="true" signature="3467:4363" ph="..." />
+            <marker date="1526817649335" expanded="true" signature="4476:5362" ph="..." />
+            <marker date="1526817649335" expanded="true" signature="5475:6361" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="92" lean-forward="false" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

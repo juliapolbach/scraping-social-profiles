@@ -5,6 +5,7 @@ import {createInfluencer} from '../queries/createInfluencerQuery';
 import {allInfluencers} from '../queries/allInfluencersQuery';
 
 const Title = styled.h3`
+  margin: 50px 0 0 50px;
   color: ${props => props.theme.green};
   font-weight: 700;
 `;
@@ -29,6 +30,10 @@ const StyledButton = styled.button`
   padding: 5px 30px 5px 30px;
   display: block;
   color: ${props => props.theme.green};
+  &:hover {
+  background-color: ${props => props.theme.paleGreen};
+  color: ${props => props.theme.white};
+  }
 `;
 
 const StyledForm = styled.form`
@@ -83,7 +88,7 @@ class AddAInfluencerForm extends React.Component {
     render() {
         return (
             <Container>
-                <Title>Añade un influencer</Title>
+                <Title>🙋 Add an Influencer</Title>
                 <StyledForm>
                     <StyledInput
                         name="name"
@@ -120,7 +125,7 @@ class AddAInfluencerForm extends React.Component {
                         placeholder="Youtube"
                         onChange={event => this.handleChange(event.target.value, event.target.name)}
                     />
-                    <StyledButton type="button" onClick={this.onClick}>Añadir</StyledButton>
+                    <StyledButton type="button" onClick={this.onClick}>ADD</StyledButton>
                 </StyledForm>
             </Container>
         );

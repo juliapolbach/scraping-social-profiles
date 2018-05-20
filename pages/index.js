@@ -13,6 +13,8 @@ const StyledGrid = styled.div`
   padding: 10px 30px 10px 30px;
   background-color: ${props => props.theme.white};
   font-family: Raleway, sans-serif;
+  color: ${props => props.theme.grey};
+  
 `;
 
 export default withData(() => (
