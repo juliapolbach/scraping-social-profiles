@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const {graphqlExpress, graphiqlExpress} = require('apollo-server-express');
 const cors = require('cors');
+const favicon = require('serve-favicon');
 
 // our packages
 const schema = require('./data/schema');
@@ -18,11 +19,12 @@ app.prepare()
     .then(() => {
         const server = express();
 
-        //graphQL
+        server.use(favicon(__dirname + '/public/images/favicon.ico'));
         server.use(cors());
+
+        //graphQL
         server.use('/graphql', bodyParser.json(), graphqlExpress({schema}));
         server.use('/graphiql', graphiqlExpress({endpointURL: '/graphql'}));
-        server.use('/favicon.ico', express.static('images/favicon.ico'));
 
         server.get('*', (req, res) => {
             return handle(req, res)
