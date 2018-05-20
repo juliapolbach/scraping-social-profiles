@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f68fa9d0-f8ca-4408-92ee-66b618743345" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/BUILD_ID" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/build-stats.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/_document.js" afterPath="$PROJECT_DIR$/.next/bundles/pages/_document.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/_error.js" afterPath="$PROJECT_DIR$/.next/bundles/pages/_error.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/index.js" afterPath="$PROJECT_DIR$/.next/bundles/pages/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/commons.js" afterPath="$PROJECT_DIR$/.next/commons.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/components/AddAInfluencerForm.js" afterPath="$PROJECT_DIR$/.next/dist/components/AddAInfluencerForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/components/Influencer.js" afterPath="$PROJECT_DIR$/.next/dist/components/Influencer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/components/InfluencersList.js" afterPath="$PROJECT_DIR$/.next/dist/components/InfluencersList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/components/app.js" afterPath="$PROJECT_DIR$/.next/dist/components/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/lib/initApollo.js" afterPath="$PROJECT_DIR$/.next/dist/lib/initApollo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/lib/withData.js" afterPath="$PROJECT_DIR$/.next/dist/lib/withData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/pages/_document.js" afterPath="$PROJECT_DIR$/.next/dist/pages/_document.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/pages/_error.js" afterPath="$PROJECT_DIR$/.next/dist/pages/_error.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/pages/index.js" afterPath="$PROJECT_DIR$/.next/dist/pages/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/queries/allInfluencersQuery.js" afterPath="$PROJECT_DIR$/.next/dist/queries/allInfluencersQuery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/queries/createInfluencerQuery.js" afterPath="$PROJECT_DIR$/.next/dist/queries/createInfluencerQuery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/queries/removeInfluencerQuery.js" afterPath="$PROJECT_DIR$/.next/dist/queries/removeInfluencerQuery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/queries/updateInfluencerQuery.js" afterPath="$PROJECT_DIR$/.next/dist/queries/updateInfluencerQuery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/styles/beautifier.js" afterPath="$PROJECT_DIR$/.next/dist/styles/beautifier.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/styles/styledComponents.js" afterPath="$PROJECT_DIR$/.next/dist/styles/styledComponents.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/styles/theme.js" afterPath="$PROJECT_DIR$/.next/dist/styles/theme.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/main.js" afterPath="$PROJECT_DIR$/.next/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/manifest.js" afterPath="$PROJECT_DIR$/.next/manifest.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/instagramScrapper.js" afterPath="$PROJECT_DIR$/Data/instagramScrapper.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +95,8 @@
       <file leaf-file-name="instagramScrapper.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Data/instagramScrapper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="689">
-              <caret line="62" column="7" lean-forward="true" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+            <state relative-caret-position="88">
+              <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -80,8 +105,8 @@
       <file leaf-file-name="twitterScrapper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/twitterScrapper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+            <state relative-caret-position="44">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -90,7 +115,7 @@
       <file leaf-file-name="youtubeScrapper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/youtubeScrapper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="61">
               <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
@@ -351,16 +376,15 @@
       <workItem from="1526374566188" duration="34085000" />
       <workItem from="1526749066273" duration="3004000" />
       <workItem from="1526753464202" duration="25305000" />
-      <workItem from="1526843793041" duration="2232000" />
+      <workItem from="1526843793041" duration="2925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106723000" />
+    <option name="totallyTimeSpent" value="107416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="993" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -372,7 +396,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6893096" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.266147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18903089" sideWeight="0.48997772" order="0" side_tool="false" content_ui="combo" />
@@ -643,14 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/youtubeScrapper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
@@ -669,16 +685,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Data/twitterScrapper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        <state relative-caret-position="44">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/youtubeScrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data/instagramScrapper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="62" column="7" lean-forward="true" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+        <state relative-caret-position="88">
+          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
           <folding />
         </state>
       </provider>

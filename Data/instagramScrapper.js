@@ -1,5 +1,10 @@
 const puppeteer = require('puppeteer');
 
+const onlyNumbers = new RegExp('^[0-9]*$');
+const thousand = new RegExp('[m]');
+const withDecimals = new RegExp('[.]');
+const milion = new RegExp('[M]');
+
 let scrapeInstagram = async (input) => {
     const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
     const page = await browser.newPage();
@@ -39,13 +44,13 @@ let parseInstagramData = (value) => {
             return parseInt(value.replace('.', ""));
         } else if (value.match(thousand)) {
             if (value.match(withDecimals)) {
-                return parseInt(value.replace(',', "").replace('m', "").concat("00"));
+                return parseInt(value.replace('.', "").replace('m', "").concat("00"));
             } else {
                 return parseInt(value.replace('m', "").concat("000"));
             }
         } else if (value.match(milion)) {
             if (value.match(withDecimals)) {
-                return parseInt(value.replace(',', "").replace('M', "").concat("00000").replace(/\s+/g, ''));
+                return parseInt(value.replace('.', "").replace('M', "").concat("00000").replace(/\s+/g, ''));
             } else {
                 return parseInt(value.replace('M', "").concat("000000").replace(/\s+/g, ''));
             }
