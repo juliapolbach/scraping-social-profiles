@@ -8,10 +8,10 @@ const path = require('path');
 const favicon = require('serve-favicon');
 
 // our packages
-const schema = path.resolve(__dirname,"data", "schema");
+const schema = require('./Data/schema');
 
 // next.js setup
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3000;
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({dev});
 const handle = app.getRequestHandler();

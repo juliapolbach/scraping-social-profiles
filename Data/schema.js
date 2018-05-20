@@ -75,5 +75,4 @@ type Mutation {
 `;
 
 const schema = makeExecutableSchema({typeDefs, resolvers});
-
 module.exports = schema;
