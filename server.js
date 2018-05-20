@@ -4,9 +4,11 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const {graphqlExpress, graphiqlExpress} = require('apollo-server-express');
 const cors = require('cors');
+const path = require('path');
+const favicon = require('serve-favicon');
 
 // our packages
-const schema = require('./data/schema');
+const schema = path.resolve(__dirname,"data", "schema");
 
 // next.js setup
 const port = process.env.PORT || 8000;
@@ -17,6 +19,7 @@ const handle = app.getRequestHandler();
 app.prepare()
     .then(() => {
         const server = express();
+        server.use(favicon(path.join(__dirname,'favicon.ico')));
         server.use('/favicon.ico', express.static('favicon.ico'));
         server.use(cors());
 
