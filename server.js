@@ -22,6 +22,7 @@ app.prepare()
         server.use(cors());
         server.use('/graphql', bodyParser.json(), graphqlExpress({schema}));
         server.use('/graphiql', graphiqlExpress({endpointURL: '/graphql'}));
+        server.use('/favicon.ico', express.static('images/favicon.ico'));
 
         server.get('*', (req, res) => {
             return handle(req, res)
