@@ -2,7 +2,6 @@ const {makeExecutableSchema} = require('graphql-tools');
 const resolvers = require('./resolvers');
 
 const typeDefs = `
-
 type Query {
     influencer(name: String, lastName: String): Influencer
     allInfluencers: [Influencer]
