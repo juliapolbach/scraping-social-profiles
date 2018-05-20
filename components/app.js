@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import {ThemeProvider} from 'styled-components';
 import {Theme} from '../styles/theme';
-import Notifications, {notify} from 'react-notify-toast';
+import Notifications from 'react-notify-toast';
 
 export default ({children}) => (
     <div>

@@ -164,8 +164,24 @@ export const Container = styled.div`
     position: relative;
 `;
 
+
+export const ContainerList = styled.div`
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+`;
+
 export const Title = styled.h3`
-  margin: 50px 0 0 50px;
+  margin: 50px 0 30px 50px;
   color: ${props => props.theme.green};
   font-weight: 700;
+`;
+
+export const ListGroup = styled.ul`
+  list-style-type: none;
+  height: 75vh;
+  overflow-y:scroll;
+  margin: 0 auto;
+  padding-top: 40px;
+  border-right: 1px dashed ${props => props.theme.green};
 `;
