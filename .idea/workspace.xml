@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68fa9d0-f8ca-4408-92ee-66b618743345" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/BUILD_ID" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/build-stats.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/_document.js" afterPath="$PROJECT_DIR$/.next/bundles/pages/_document.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/_error.js" afterPath="$PROJECT_DIR$/.next/bundles/pages/_error.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/index.js" afterPath="$PROJECT_DIR$/.next/bundles/pages/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/commons.js" afterPath="$PROJECT_DIR$/.next/commons.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/components/AddAInfluencerForm.js" afterPath="$PROJECT_DIR$/.next/dist/components/AddAInfluencerForm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/components/Influencer.js" afterPath="$PROJECT_DIR$/.next/dist/components/Influencer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/components/InfluencersList.js" afterPath="$PROJECT_DIR$/.next/dist/components/InfluencersList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/components/app.js" afterPath="$PROJECT_DIR$/.next/dist/components/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/lib/initApollo.js" afterPath="$PROJECT_DIR$/.next/dist/lib/initApollo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/lib/withData.js" afterPath="$PROJECT_DIR$/.next/dist/lib/withData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/pages/_document.js" afterPath="$PROJECT_DIR$/.next/dist/pages/_document.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/pages/_error.js" afterPath="$PROJECT_DIR$/.next/dist/pages/_error.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/pages/index.js" afterPath="$PROJECT_DIR$/.next/dist/pages/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/queries/allInfluencersQuery.js" afterPath="$PROJECT_DIR$/.next/dist/queries/allInfluencersQuery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/queries/createInfluencerQuery.js" afterPath="$PROJECT_DIR$/.next/dist/queries/createInfluencerQuery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/queries/removeInfluencerQuery.js" afterPath="$PROJECT_DIR$/.next/dist/queries/removeInfluencerQuery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/queries/updateInfluencerQuery.js" afterPath="$PROJECT_DIR$/.next/dist/queries/updateInfluencerQuery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/styles/beautifier.js" afterPath="$PROJECT_DIR$/.next/dist/styles/beautifier.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/styles/styledComponents.js" afterPath="$PROJECT_DIR$/.next/dist/styles/styledComponents.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/styles/theme.js" afterPath="$PROJECT_DIR$/.next/dist/styles/theme.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/main.js" afterPath="$PROJECT_DIR$/.next/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/manifest.js" afterPath="$PROJECT_DIR$/.next/manifest.js" />
-    </list>
+    <list default="true" id="f68fa9d0-f8ca-4408-92ee-66b618743345" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +13,18 @@
     <favorites_list name="julia-codeTest" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="resolvers.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Data/resolvers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-135">
+              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -157,7 +141,7 @@
             <path>
               <item name="julia-codeTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="julia-codeTest" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -301,12 +285,12 @@
       <workItem from="1526843793041" duration="5526000" />
       <workItem from="1526891365316" duration="13000" />
       <workItem from="1526990873153" duration="21000" />
-      <workItem from="1530168139642" duration="89000" />
+      <workItem from="1530168139642" duration="526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110140000" />
+    <option name="totallyTimeSpent" value="110577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
@@ -439,13 +423,6 @@
     <entry file="file://$PROJECT_DIR$/static/bootstrap-theme.min.css" />
     <entry file="file://$PROJECT_DIR$/static/bootstrap.css" />
     <entry file="file://$PROJECT_DIR$/static/bootstrap.min.css" />
-    <entry file="file://$PROJECT_DIR$/queries/createInfluencerQuery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/reset.css" />
     <entry file="file://$PROJECT_DIR$/queries/allInfluencersQuery.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -462,13 +439,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/EditingInfluencer.js" />
-    <entry file="file://$PROJECT_DIR$/pages/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/queries/removeInfluencerQuery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -490,13 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/resolvers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-notify-toast/bin/notify.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
@@ -504,24 +467,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Influencer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="75" column="12" lean-forward="false" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/styledComponents.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2159">
           <caret line="171" column="2" lean-forward="false" selection-start-line="171" selection-start-column="2" selection-end-line="171" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/AddAInfluencerForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -628,6 +577,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queries/createInfluencerQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding>
+            <marker date="1526407203668" expanded="true" signature="69:445" ph="mutation...{&#10;  createInfluencer (input:$input) {&#10;    id&#10;    name&#10;    lastName&#10;    instagram {&#10;      profileUrl&#10;      photoProfile&#10;      totalPosts&#10;      followers&#10;    }&#10;    twitter {&#10;      profileUrl&#10;      photoProfile&#10;      totalPosts&#10;      followers&#10;    }&#10;    youtube {&#10;      profileUrl&#10;      photoProfile&#10;      totalPosts&#10;      followers&#10;    }&#10;  }&#10;}" />
+            <marker date="1526407203668" expanded="true" signature="78:103" ph="(...)" />
+            <marker date="1526407203668" expanded="true" signature="86:101" ph="InfluencerInput...InfluencerInput" />
+            <marker date="1526407203668" expanded="true" signature="104:445" ph="{...}" />
+            <marker date="1526407203668" expanded="true" signature="108:124" ph="createInfluencer...createInfluencer" />
+            <marker date="1526407203668" expanded="true" signature="108:443" ph="createInfluencer...{&#10;    id&#10;    name&#10;    lastName&#10;    instagram {&#10;      profileUrl&#10;      photoProfile&#10;      totalPosts&#10;      followers&#10;    }&#10;    twitter {&#10;      profileUrl&#10;      photoProfile&#10;      totalPosts&#10;      followers&#10;    }&#10;    youtube {&#10;      profileUrl&#10;      photoProfile&#10;      totalPosts&#10;      followers&#10;    }&#10;  }" />
+            <marker date="1526407203668" expanded="true" signature="125:139" ph="(...)" />
+            <marker date="1526407203668" expanded="true" signature="126:131" ph="input...input" />
+            <marker date="1526407203668" expanded="true" signature="140:443" ph="{...}" />
+            <marker date="1526407203668" expanded="true" signature="146:148" ph="id...id" />
+            <marker date="1526407203668" expanded="true" signature="153:157" ph="name...name" />
+            <marker date="1526407203668" expanded="true" signature="162:170" ph="lastName...lastName" />
+            <marker date="1526407203668" expanded="true" signature="175:184" ph="instagram...instagram" />
+            <marker date="1526407203668" expanded="true" signature="175:261" ph="instagram...{&#10;      profileUrl&#10;      photoProfile&#10;      totalPosts&#10;      followers&#10;    }" />
+            <marker date="1526407203668" expanded="true" signature="185:261" ph="{...}" />
+            <marker date="1526407203668" expanded="true" signature="193:203" ph="profileUrl...profileUrl" />
+            <marker date="1526407203668" expanded="true" signature="210:222" ph="photoProfile...photoProfile" />
+            <marker date="1526407203668" expanded="true" signature="229:239" ph="totalPosts...totalPosts" />
+            <marker date="1526407203668" expanded="true" signature="246:255" ph="followers...followers" />
+            <marker date="1526407203668" expanded="true" signature="266:273" ph="twitter...twitter" />
+            <marker date="1526407203668" expanded="true" signature="266:350" ph="twitter...{&#10;      profileUrl&#10;      photoProfile&#10;      totalPosts&#10;      followers&#10;    }" />
+            <marker date="1526407203668" expanded="true" signature="274:350" ph="{...}" />
+            <marker date="1526407203668" expanded="true" signature="282:292" ph="profileUrl...profileUrl" />
+            <marker date="1526407203668" expanded="true" signature="299:311" ph="photoProfile...photoProfile" />
+            <marker date="1526407203668" expanded="true" signature="318:328" ph="totalPosts...totalPosts" />
+            <marker date="1526407203668" expanded="true" signature="335:344" ph="followers...followers" />
+            <marker date="1526407203668" expanded="true" signature="355:362" ph="youtube...youtube" />
+            <marker date="1526407203668" expanded="true" signature="355:439" ph="youtube...{&#10;      profileUrl&#10;      photoProfile&#10;      totalPosts&#10;      followers&#10;    }" />
+            <marker date="1526407203668" expanded="true" signature="363:439" ph="{...}" />
+            <marker date="1526407203668" expanded="true" signature="371:381" ph="profileUrl...profileUrl" />
+            <marker date="1526407203668" expanded="true" signature="388:400" ph="photoProfile...photoProfile" />
+            <marker date="1526407203668" expanded="true" signature="407:417" ph="totalPosts...totalPosts" />
+            <marker date="1526407203668" expanded="true" signature="424:433" ph="followers...followers" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Influencer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="75" column="12" lean-forward="false" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/AddAInfluencerForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1331">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/resolvers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding />
         </state>
       </provider>
